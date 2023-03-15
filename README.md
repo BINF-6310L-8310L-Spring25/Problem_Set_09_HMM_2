@@ -18,7 +18,7 @@ In this case the codon depends _only_ on the hidden state. Below each hidden sta
 **Build the transmission and emission matrices from this diagram**
 
 
-## Problem 2 - Probability of our observation
+## Problem 2 - Probability of our observation (2 points)
 
 Let's imagine we sample a DNA sequence which would have the RNA sequence below (aka you don't need to transcribe it) 
 
@@ -31,22 +31,30 @@ Use the approrpiate command in the HMM package to find the probability of our ob
 
 
 
-## Problem 2 - Hidden States
+## Problem 2 - Hidden States (3 points)
 
 Remember we have two methods for assessing the hidden states associated with our sequence above. We can calculate the probability of being at any given hidden state at time T. We can also find the most likely sequence of hidden states given our observations. 
 
 Conduct both of these analysis types and report the most likely hidden states. 
 
 
-## Problem 3 - Tuning a parameter
+## Problem 3 - Tuning a parameter (4 points)
 
-In the model above you'll notice that there is a small probability of the hidden state "start" emitting the state "other" aka sometimes our genes do not start with a start codon! There are alternative start codons that organisms can utilize to start a gene sequence. 
+In our transmission matrix we assigned probabilities to transitions associatd with the Intergenic and Exon states. 
 
-You have a sequence from an unusual new species that you _think_ might be using alternative start codons at a higher rate than you based your model on 
+Let's imagine we want to tune one of these two parameters - the Intergenic parameters. 
 
-Here is the sequence
+Test 100 different probabilities (spanning from 0 to 1) using a loop like was shown in the lecture. Use the new transition probabilities to compute the probability of observing the sequence above. 
 
-**CUA  GCG  UCG  GAG  CAU  UAA  UCU  CCG  UCG  GUG  UGA  AUG**
+Plot the transition probabilities agains the probability of our observation
+
+What Intergenic transition probabilities maximize the probability of our observed sequence? 
+
+
+
+## Final Step (1 point)
+
+Knit and upload your document to canvas
 
 
 
