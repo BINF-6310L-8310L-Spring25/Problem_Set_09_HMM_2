@@ -24,6 +24,8 @@ Let's imagine we sample a DNA sequence which would have the RNA sequence below (
 
 **ACU  AAA  AUG  AUG  GCG  UGA  UUU**
 
+_Reminder: AUG is start. Stop is UAA, UAG, or UGA_
+
 In this case we are going to assume that **we start at an intergenic hidden state**
 Use the approrpiate command in the HMM package to find the probability of our observation given our HMM 
 
@@ -31,5 +33,24 @@ Use the approrpiate command in the HMM package to find the probability of our ob
 
 ## Problem 2 - Hidden States
 
-Remember we have two methods for assessing the hidden states associated with our 
+Remember we have two methods for assessing the hidden states associated with our sequence above. We can calculate the probability of being at any given hidden state at time T. We can also find the most likely sequence of hidden states given our observations. 
+
+Conduct both of these analysis types and report the most likely hidden states. 
+
+
+## Problem 3 - Tuning a parameter
+
+In the model above you'll notice that there is a small probability of the hidden state "start" emitting the state "other" aka sometimes our genes do not start with a start codon! There are alternative start codons that organisms can utilize to start a gene sequence. 
+
+You have a sequence from an unusual new species that you _think_ might be using alternative start codons at a higher rate than you based your model on 
+
+Here is the sequence
+
+**CUA  GCG  UCG  GAG  CAU  UAA  UCU  CCG  UCG  GUG  UGA  AUG**
+
+
+
+
+
+
 
