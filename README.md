@@ -56,7 +56,7 @@ What state has the maximum probability in the steady states?
 ## Question C2
 What is the probability associated with the steady-state selected in Question C1?
 
-## Question C2
+## Question C3
 What is the most likely series of hidden states associated with the above DNA/RNA sequence (the 7 observed states from Question B)
 &nbsp;
 &nbsp;
