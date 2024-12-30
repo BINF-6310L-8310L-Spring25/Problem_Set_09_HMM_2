@@ -1,4 +1,4 @@
-# Problem_Set_10
+# Problem_Set_09
 
 This week we learned how to build and test Hidden Markov Models (HMM)
 HMMs are very useful in biological, genomic, and proteomic investigations. 
